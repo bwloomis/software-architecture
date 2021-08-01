@@ -1,0 +1,111 @@
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+wwwroot/
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+# **/Properties/launchSettings.json
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.dotCover
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# Others
+ClientBin/
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# vim
+*.swp
+
+# Appsettings
+# appsettings.*.json - leave all the appsettings files!
+
+# ReSharper Code Coverage Filters
+*.DotSettings
+
+# Automation log
+automation-*.log
+
+# Mac OS
+*.DS_Store
+
+# Settle Tool output
+*.csv
+
+#Exclude Code behind files
+*.feature.cs
+
+ModuleDlls/
+
+serviceDependencies.json
+serviceDependencies.local.json
+# /Source/DGPG.PaymentService/Properties/PublishProfiles
+/Source/DGPG.PaymentService/package
+/Source/DGPG.PaymentService/.config/dotnet-tools.json
+/Build
+/Package
+/Tests/DGPG.FunctionalTests/TestReport/index.html
+/Publish
