@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using myCoffeeRewards.Models;
 
-namespace myCoffeeRewards.Controllers
+namespace completed.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -29,22 +29,7 @@ namespace myCoffeeRewards.Controllers
 
         // GET: api/Product/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(long id)
-        {
-            var product = await _context.Products.FindAsync(id);
-
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            return product;
-        }
-
-        // Get using QueryString parameters (instead of Id in URL), see other ways to serialize inputs https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0 
-        [HttpGet("GetProductQS")]
-        // [Route("api/[controller]/GetProductQS")]
-        public async Task<ActionResult<Product>> GetProductQS([FromQuery] long id)
+        public async Task<ActionResult<Product>> GetProduct(int id)
         {
             var product = await _context.Products.FindAsync(id);
 
@@ -59,7 +44,7 @@ namespace myCoffeeRewards.Controllers
         // PUT: api/Product/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(long id, Product product)
+        public async Task<IActionResult> PutProduct(int id, Product product)
         {
             if (id != product.Id)
             {
@@ -100,7 +85,7 @@ namespace myCoffeeRewards.Controllers
 
         // DELETE: api/Product/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(long id)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
             var product = await _context.Products.FindAsync(id);
             if (product == null)
@@ -114,7 +99,7 @@ namespace myCoffeeRewards.Controllers
             return NoContent();
         }
 
-        private bool ProductExists(long id)
+        private bool ProductExists(int id)
         {
             return _context.Products.Any(e => e.Id == id);
         }

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using myCoffeeRewards.Models;
 
-namespace myCoffeeRewards.Controllers
+namespace completed.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -29,7 +29,7 @@ namespace myCoffeeRewards.Controllers
 
         // GET: api/Customer/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Customer>> GetCustomer(long id)
+        public async Task<ActionResult<Customer>> GetCustomer(int id)
         {
             var customer = await _context.Customers.FindAsync(id);
 
@@ -44,7 +44,7 @@ namespace myCoffeeRewards.Controllers
         // PUT: api/Customer/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCustomer(long id, Customer customer)
+        public async Task<IActionResult> PutCustomer(int id, Customer customer)
         {
             if (id != customer.Id)
             {
@@ -85,7 +85,7 @@ namespace myCoffeeRewards.Controllers
 
         // DELETE: api/Customer/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCustomer(long id)
+        public async Task<IActionResult> DeleteCustomer(int id)
         {
             var customer = await _context.Customers.FindAsync(id);
             if (customer == null)
@@ -99,7 +99,7 @@ namespace myCoffeeRewards.Controllers
             return NoContent();
         }
 
-        private bool CustomerExists(long id)
+        private bool CustomerExists(int id)
         {
             return _context.Customers.Any(e => e.Id == id);
         }
