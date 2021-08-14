@@ -1,8 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to the IASA Global Software Architecture course!
 
 You can use the [editor on GitHub](https://github.com/bwloomis/software-architecture/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+intro - what the course is (link to IASA), taught by multiple instructors (refer to your email from IASA for contact info)
+how content is organized
+- by HOL
+- - 1 - ORM, OpenAPI
+- - 2
+versioning is by branch - main & starter are duplicates, should be downloaded initially; each lab then has a final branch with completed applcation... intermediate points to start from are listed in HOL
+See Teams site (or invite-only repo) for HOL guides
+each one has a README for how to build, required tools, etc.
+
+loyalty case study docs
+- requirements description
+- 
+copyright - both PDA & IASA, 2021, all rights reserved  Course participants may use materials after the course for personal use only.  Open CC-By??  Can participants reuse in teaching context?  Recommend that professional training is a reserved use by IASA.  PLease contact for local or online, standard or custom course delivery.
+
+---
+
 
 ### Markdown
 
