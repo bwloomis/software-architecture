@@ -17,21 +17,24 @@ namespace myCoffeeRewards.Models
 
         public int CustomerId { get; set; }
         public int LocationId { get; set; }
+        public int PaymentId { get; set; }
         
         // navigation properties
         public Customer Customer { get; set; }
         public Location Location { get; set; }    // FK to the Location/store - in EFCore/ORM just refere to other type of the reference, to create an FK
+        public Payment Payment { get; set; }
 
-        public ICollection<OrderProduct> ProductsLink { get; set; } // many-to-many realtionship via linking table to Products (and quantities) on this order
+        public ICollection<OrderProduct> ProductsLink { get; set; } // many-to-many relationship via linking table to Products (and quantities) on this order
         // a good description of this is https://www.thereformedprogrammer.net/updating-many-to-many-relationships-in-entity-framework-core/ 
     } 
 
     public enum OrderStatus     // automatically converted to ?? string/int?
     {
         NOT_PURCHASED,  // includes purchase declined (no points, bad CC), other info missing; what status would need to be there if we want to allow customer to pay upon fufillment? (i.e. at the store when they pick up)
-        PURCHASED_NOT_FULLFILLED,   // purchase transaction processed, order at store for fulfillment
-        FULFILLING,  // order is complete - paid for, fufilled
+        PURCHASED_NOT_FULLFILLED,   // purchase transaction processed (cart submitted), order not yet at store for fulfillment
+        FULFILLING,  // order is complete - paid for, fulfilled (usually this would be two different statuses, since the payment comes after fulfillment and settling may actually be days later...
         CANCELLED,  // includes refund/voids/returns for credit
-        COMPLETED
+        COMPLETED,
+        UNDEFINED   // for orders that do not exist
     }
 }

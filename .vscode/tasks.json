@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/reactSubscription/reactSubscription.csproj",
+                "${workspaceFolder}/learning-shot-1-orm/completed/completed.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/reactSubscription/reactSubscription.csproj",
+                "${workspaceFolder}/learning-shot-1-orm/completed/completed.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/reactSubscription/reactSubscription.csproj",
+                "${workspaceFolder}/learning-shot-1-orm/completed/completed.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

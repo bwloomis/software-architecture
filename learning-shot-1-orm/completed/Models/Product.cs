@@ -10,7 +10,7 @@ namespace myCoffeeRewards.Models
         public string SKU { get; set; }     // how to ensure this is unique?
         public long Price { get; set; }  // implied currency (USD?) and decimal (at position 2?)
 
-        public ICollection<OrderProduct> OrdersLink { get; set; }     // tells the ORM that we have a many-to-many relationship, through a mapping table
+        public ICollection<OrderProduct> OrdersLink { get; set; }     
 
         // for a real product, we'd add a lot of other information: inventory, recipe, ingredients/quantity used, average number made/day, which stores offer this product?, an image...
     } 
