@@ -21,7 +21,7 @@ Please see the course Microsoft Teams site for the latest HOL guides, which are 
 
 ### References to T-Coffee Loyalty case study
 The case study for Tinkleman's T-Coffee Loyalty Program upgrade has a number of artifacts describing the initial requirements and design. These are online as well, in the  /Requirements folder.
-1. TExtual requirements description
+1. Textual requirements description
 2. Service blueprint (business layer)
 3. Sequence diagram and state-transition diagram for orders with Point-of-Sale
 4. Initial data model
@@ -43,6 +43,11 @@ No warranty or guarantee of suitability for any application is conveyed through 
 ### Reporting bugs
 ** TBD **
 
+### [Princeton Digital Advisors(https://www.princetondigitaladvisors.com/)]
+![Image](src)
+
+### [IASA Global(https://iasaglobal.org/)]
+![Image](https://iasaglobal.org/images/IASA/website/theme/iasa_logo_web.png)
 ---
 You can use the [editor on GitHub](https://github.com/bwloomis/software-architecture/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
