@@ -11,7 +11,12 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace starter
+// added
+using Microsoft.EntityFrameworkCore;
+using myCoffeeRewards.Models;
+using myCoffeeRewards.Controllers;
+
+namespace myCoffeeRewards
 {
     public class Startup
     {
@@ -27,9 +32,14 @@ namespace starter
         {
 
             services.AddControllers();
+
+#region HOL_SECTION_2
+            services.AddDbContext<LoyaltyContext>(opt => opt.UseInMemoryDatabase("LoyaltyDB"));
+#endregion
+            
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "starter", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "myCoffeeRewards", Version = "v1" });
             });
         }
 
@@ -40,7 +50,7 @@ namespace starter
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "starter v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "myCoffeeRewards v1"));
             }
 
             app.UseRouting();
