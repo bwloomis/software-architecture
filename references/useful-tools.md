@@ -185,6 +185,7 @@ The architect also tries to select tools that help simplify complexity and impro
 * Microsoft Project 
 #### Reporting and service status
 * Splunk, Datadog, ServiceNow, etc.
+* (ITGlue)[https://support.itglue.com/hc/en-us/categories/360002052792-Using-IT-Glue]
 #### Enterprise (portfolio) architecture
 * (LeanIX)[https://www.leanix.net/en/] 
 * (Ardoq)[https://ardoq.com]
