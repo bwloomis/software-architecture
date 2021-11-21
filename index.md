@@ -44,7 +44,7 @@ No warranty or guarantee of suitability for any application is conveyed through 
 **TBD**
 
 ### [Princeton Digital Advisors](https://www.princetondigitaladvisors.com/)
-![Image](src)
+![Image](Brian Logo Square.png)
 
 ### [IASA Global](https://iasaglobal.org/)
 ![Image](https://iasaglobal.org/images/IASA/website/theme/iasa_logo_web.png)
